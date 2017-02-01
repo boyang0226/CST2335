@@ -9,4 +9,12 @@
     <string name="RadioButton">RadioButton</string>
     <string name="CheckBox">CheckBox</string>
     <string name="Enable">Enable Something</string>
+
+
+
+    <string name="loginActivityButton">Login</string>
+    <string name="dialog_message">Do you want to quit?</string>
+    <string name="dialog_title">Warning</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No</string>
 </resources>
