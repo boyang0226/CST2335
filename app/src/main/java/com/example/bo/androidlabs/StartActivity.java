@@ -22,14 +22,27 @@ public class StartActivity extends AppCompatActivity {
         Button List = (Button) findViewById(R.id.button);
         List.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View views) {
-
+            public void onClick(View v) {
 
                 Intent ListItemsActivity = new Intent(StartActivity.this, ListItemsActivity.class);
                 startActivityForResult(ListItemsActivity, 5);
 
             }
         });
+
+
+        Button chat =(Button)findViewById(R.id.button_chat);
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent chatWindow = new Intent(StartActivity.this, ChatWindow.class);
+                startActivity(chatWindow);
+
+                Log.i(ACTIVITY_Name, "User clicked Start Chat");
+
+            }
+        });
+
         Log.i(ACTIVITY_Name,"In onCreate()");
     }
 
