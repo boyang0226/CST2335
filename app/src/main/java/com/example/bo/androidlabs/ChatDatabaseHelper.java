@@ -18,6 +18,7 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     public static final String KEY_MESSAGE = "message";
 
 
+
     public ChatDatabaseHelper(Context ctx) {
         super(ctx, databaseName, null, VERSION_NUM);
     }
